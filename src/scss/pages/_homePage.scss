@@ -1,0 +1,57 @@
+.homePage {
+  background-image: url("/src/assets/home/background-home-mobile.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 40%;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    @include xl-text;
+    font-family: "Bellefair", sans-serif;
+    font-weight: 400;
+    margin: 8% 0;
+  }
+  h3 {
+    @include md-text;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: $lavanderBlue;
+  }
+  p {
+    color: $lavanderBlue;
+    padding: 0 4%;
+    line-height: 24px;
+    text-align: center;
+    @include md-text;
+  }
+  &__circleBtn {
+    background-color: white;
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+    border: none;
+    @include transition(transform 0.2s ease-in);
+
+    &:hover {
+      transform: scale(1.25);
+      box-shadow: 0px 0px 15px rgb(255, 255, 255);
+    }
+
+    &__text {
+      position: absolute;
+      color: $richBlack;
+      font-family: "Bellefair", sans-serif;
+      font-size: 20px;
+    }
+  }
+}

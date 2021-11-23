@@ -1,1 +1,11 @@
-@import './scss/abstracts/variables';
+@import "./scss/abstracts/variables";
+@import "./scss/abstracts/mixins";
+
+@import "./scss/base/reset";
+
+// components
+@import "./scss/components/Nav";
+
+// pages
+@import "./scss/pages/homePage";
+@import "./scss/pages/destPage";

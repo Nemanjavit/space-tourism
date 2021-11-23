@@ -1,0 +1,32 @@
+.destPage {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-top: 25%;
+  height: 100vh;
+  background-image: url("/src/assets/destination/background-destination-mobile.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__heading {
+    // @include md-text;
+    font-size: 3vw;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    text-align: center;
+
+    &__number {
+      color: rgba(255, 255, 255, 0.25);
+      margin-right: 10px;
+    }
+  }
+
+  &__imageWrapper {
+    width: 50%;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
