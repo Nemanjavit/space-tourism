@@ -1,0 +1,14 @@
+.wrapper {
+  animation: slideTop;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+@keyframes slideTop {
+  from {
+    margin-top: 100vh;
+  }
+  to {
+    margin-top: 0vh;
+  }
+}

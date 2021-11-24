@@ -19,5 +19,7 @@
 
 @mixin md-text {
   font-family: "Barlow Condensed", open sans;
-  font-size: 15px;
+  font-size: 4vw;
+}
+@mixin spin {
 }
