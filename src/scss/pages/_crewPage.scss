@@ -1,0 +1,56 @@
+.crewPage {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: -100px;
+  padding-top: 25%;
+  min-height: 100vh;
+  background-image: url("/src/assets/crew/background-crew-mobile.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &__crewmember {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  &__imageWrapper {
+    // width: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 90%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);
+      bottom: 0;
+    }
+  }
+  &__image {
+    width: 30%;
+  }
+  //   .gilde__bullets {
+  //     display: flex;
+  //     justify-content: space-between;
+  //   }
+  .glide__bullet {
+    color: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 10px;
+
+    &--active {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
