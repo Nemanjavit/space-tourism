@@ -1,0 +1,80 @@
+.techPage {
+  background-image: url(/src/assets/technology/background-technology-mobile.jpg);
+  height: 100vh;
+  margin-top: -100px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 25%;
+  color: white;
+
+  &__imgWrapper {
+    width: 100%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  .glide__bullets {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .glide__bullet {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: $richBlack;
+    color: white;
+    margin: 0 10px;
+
+    &:hover,
+    &--active {
+      color: $richBlack;
+      background-color: white;
+    }
+  }
+
+  h4 {
+    @include md-text;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: $lavanderBlue;
+  }
+
+  h2 {
+    font-family: "Bellefair", sans-serif;
+    font-size: 5.5vw;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding: 10px 0;
+  }
+
+  h3 {
+    @include md-text;
+    font-weight: lighter;
+    margin: 30px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    span {
+      margin-right: 10px;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  p {
+    @include md-text;
+    color: $lavanderBlue;
+  }
+
+  &__textContent {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

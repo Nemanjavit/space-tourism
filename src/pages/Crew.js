@@ -34,7 +34,6 @@ function Crew() {
   return (
     <div className="crewPage">
       <div className="wrapper">
-        <h2>Crew</h2>
         <div className="glide">
           <div className="glide__track" data-glide-el="track">
             <ul className="glide__slides">
@@ -46,8 +45,8 @@ function Crew() {
                     </h4>
                     <div className="crewPage__crewmember">
                       <div className="crewPage__info">
-                        <h3>{crewmember.role}</h3>
-                        <h2>{crewmember.name}</h2>
+                        <h3>{crewmember.role.toUpperCase()}</h3>
+                        <h2>{crewmember.name.toUpperCase()}</h2>
                         <p className="crewPage__bio">{crewmember.bio}</p>
                       </div>
                       <div
