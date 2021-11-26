@@ -30,7 +30,7 @@ function Destionations() {
     let array = [moon_0, mars_1, europa_2, titan_3];
     return array[i];
   };
-  console.log(destinations);
+
   return (
     <div className="destPage">
       <div className="wrapper">
