@@ -9,17 +9,16 @@ import Technology from "./pages/Technology";
 // components
 import Nav from "./components/Nav";
 
-
 function App() {
   return (
     <div>
       <BrowserRouter>
-      <Nav/>
-        <Routes>
+        <Nav />
+        <Routes basename="/space-tourism/">
           <Route path="/" exact element={<HomePage />} />
-          <Route path='/destination' element={<Destionations/>}/>
-          <Route path='/crew' element={<Crew/>} />
-          <Route path='/technology' element={<Technology/>} />
+          <Route path="/destination" element={<Destionations />} />
+          <Route path="/crew" element={<Crew />} />
+          <Route path="/technology" element={<Technology />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -13,6 +13,9 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
   },
+  resolve: {
+    extensions: [".js", ".jsx"],
+  },
   devServer: {
     port: 8080,
     historyApiFallback: true,
