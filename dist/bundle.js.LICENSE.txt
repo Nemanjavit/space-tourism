@@ -4,6 +4,12 @@ object-assign
 @license MIT
 */
 
+/*!
+ * Glide.js v3.5.0
+ * (c) 2013-2021 Jędrzej Chałubek (https://github.com/jedrzejchalubek/)
+ * Released under the MIT License.
+ */
+
 /**
  * React Router DOM v6.0.2
  *
