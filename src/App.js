@@ -14,7 +14,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Nav />
-        <Routes basename="/space-tourism/">
+        <Routes basename="/space-tourism">
           <Route path="/" exact element={<HomePage />} />
           <Route path="/destination" element={<Destionations />} />
           <Route path="/crew" element={<Crew />} />
