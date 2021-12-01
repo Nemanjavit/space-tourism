@@ -1,5 +1,8 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .header {
-  // position: absolute;
+  // position: fixed;
   width: 100%;
   padding: 24px;
   z-index: 2;
@@ -19,9 +22,9 @@
   .nav {
     z-index: 3;
     background-color: rgba(255, 255, 255, 0.1);
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 30%;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     width: 70%;

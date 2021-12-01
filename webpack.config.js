@@ -3,10 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const loader = require("sass-loader");
 
-// const extractPLugin=new MiniCssExtractPlugin({
-//     filename:'main',
-// })
-
 module.exports = {
   entry: ["babel-polyfill", "./src/index.js"],
   output: {
@@ -30,8 +26,9 @@ module.exports = {
         },
       },
       {
-        test: /\.s[ac]ss$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        // test: /\.s[ac]ss$/i,
+        use: ["style-loader", "css-loader", "sass-loader"],
+        test: /\.(css|sass|scss)$/,
       },
       {
         type: "asset",

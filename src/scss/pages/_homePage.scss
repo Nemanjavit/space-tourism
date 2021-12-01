@@ -1,49 +1,41 @@
-.homePage {
-  background-image: url("/src/assets/home/background-home-mobile.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -100px;
-  padding-top: 25%;
-  color: #ffff;
-  background-attachment: fixed;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 85vh;
+.home {
+  background-image: url("/src/assets/home/background-home-mobile.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+
+  h1 {
+    margin-bottom: 8%;
+    font-size: 23vw;
   }
-  h2 {
-    @include xl-text;
-    font-family: "Bellefair", sans-serif;
-    font-weight: 400;
-    margin: 8% 0;
-  }
+
   h3 {
-    @include md-text;
     font-weight: lighter;
-    letter-spacing: 3px;
-    color: $lavanderBlue;
+    letter-spacing: 3.5px;
+    padding-top: 15%;
   }
+
   p {
     color: $lavanderBlue;
-    padding: 0 4%;
-    line-height: 24px;
+    line-height: 30px;
     text-align: center;
     width: 80%;
-    @include md-text;
+    opacity: 0.6;
+    margin-bottom: 20%;
   }
+
   &__circleBtn {
+    padding: 10% 0;
     background-color: white;
-    width: 155px;
-    height: 155px;
+    width: 25vh;
+    height: 25vh;
     border-radius: 50%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30%;
     border: none;
     @include transition(transform 0.2s ease-in);
 

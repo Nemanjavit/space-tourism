@@ -30,7 +30,7 @@ function Crew() {
     let array = [crew_0, crew_1, crew_2, crew_3];
     return array[i];
   };
-  console.log(crew);
+
   return (
     <div className="crewPage">
       <div className="wrapper">

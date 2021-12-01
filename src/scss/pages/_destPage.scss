@@ -1,13 +1,8 @@
-.destPage {
-  display: flex;
-  justify-content: center;
-  color: white;
-  margin-top: -100px;
-  padding-top: 25%;
-  min-height: 100vh;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.destination {
   background-image: url("/src/assets/destination/background-destination-mobile.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 
@@ -21,9 +16,8 @@
   }
 
   &__heading {
-    @include md-text;
     font-weight: lighter;
-    letter-spacing: 2px;
+    letter-spacing: 3.5px;
     text-align: center;
 
     &__number {
@@ -71,8 +65,6 @@
   }
 
   &__destName {
-    @include lg-text;
-    font-family: "Bellefair", sans-serif;
     font-weight: lighter;
     margin-top: 35px;
   }

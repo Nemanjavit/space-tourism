@@ -6,7 +6,7 @@ import close from "../assets/shared/icon-close.svg";
 
 function Nav() {
   const [isShown, setisShown] = useState(false);
-  console.log(isShown);
+
   return (
     <header className="header">
       <div className="logoWrapper">
@@ -20,7 +20,7 @@ function Nav() {
       </button>
       <nav className={isShown ? "nav nav--open" : "nav"}>
         <div className="nav__menu">
-          <Link className="nav__menu__item" to="/">
+          <Link className="nav__menu__item" to="/home">
             00 HOME
           </Link>
           <Link className="nav__menu__item" to="/destination">

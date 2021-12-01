@@ -1,14 +1,12 @@
-@import "./scss/abstracts/variables";
-@import "./scss/abstracts/mixins";
+// @import "./scss/abstracts/variables";
+// @import "./scss/abstracts/mixins";
 
-@import "./scss/base/reset";
-@import "./scss/base/shared";
-
+@forward "../src/scss/base/shared";
+@forward "../src/scss/base/reset";
 // components
-@import "./scss/components/Nav";
-
+@forward "../src/scss/components/Nav";
 // pages
-@import "./scss/pages/homePage";
-@import "./scss/pages/destPage";
-@import "./scss/pages/crewPage";
-@import "./scss/pages/technologyPage";
+@forward "../src/scss/pages/homePage";
+@forward "../src/scss/pages/destPage";
+@forward "../src/scss/pages/crewPage";
+@forward "../src/scss/pages/technologyPage";

@@ -57,7 +57,6 @@ function Technology() {
           <div className="glide__track" data-glide-el="track">
             <ul className="glide__slides">
               {technologies.map((technology, i) => {
-                console.log(technology);
                 return (
                   <li className="glide__slide" key={i}>
                     <div className="techPage__imgWrapper">
