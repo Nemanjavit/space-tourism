@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Route, Switch, useLocation, useHistory } from "react-router-dom";
+import { Route, Switch, useLocation, Redirect } from "react-router-dom";
 
 // pages
 import HomePage from "./pages/HomePage";
@@ -17,6 +17,9 @@ function App() {
     <div className={`page ${page}`}>
       <Nav />
       <Switch>
+        <Route path="/" exact>
+          <Redirect to="/home" />
+        </Route>
         <Route path="/home" component={HomePage} />
         <Route path="/destination" component={Destionations} />
         <Route path="/crew" component={Crew} />
