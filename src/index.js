@@ -5,7 +5,7 @@ import "./main.scss";
 import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDom.render(
-  <Router>
+  <Router basename="/space-tourism">
     <App />
   </Router>,
   document.getElementById("root")

@@ -83,10 +83,10 @@ function Destionations() {
                       {destination.description}
                     </p>
                     <hr className="destination__hr" />
-                    <h4>AVG. DISTANCE</h4>
-                    <h3>{destination.distance.toUpperCase()}</h3>
-                    <h4>EST. TRAVEL TIME</h4>
-                    <h3>{destination.travel.toUpperCase()}</h3>
+                    <h6>AVG. DISTANCE</h6>
+                    <h5>{destination.distance.toUpperCase()}</h5>
+                    <h6>EST. TRAVEL TIME</h6>
+                    <h5>{destination.travel.toUpperCase()}</h5>
                   </div>
                 </li>
               );

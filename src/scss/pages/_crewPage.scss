@@ -1,39 +1,30 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.crewPage {
-  display: flex;
-  justify-content: center;
-  color: white;
-  margin-top: -100px;
-  padding-top: 20%;
-  min-height: 100vh;
+.crew {
   background-color: $richBlack;
 
   h4 {
-    @include md-text;
     font-weight: lighter;
     text-align: center;
-    letter-spacing: 2.5px;
-    padding: 30px 0;
-    font-size: 4vw;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  h5 {
+    font-weight: lighter;
+    margin: 10px 0;
+  }
+
+  h2 {
+    font-weight: lighter;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    letter-spacing: 3.5px;
+    text-align: center;
     span {
       color: rgba(255, 255, 255, 0.2);
       margin-right: 15px;
     }
-  }
-
-  h3 {
-    @include md-text;
-    font-family: "Bellefair", sans-serif;
-    font-weight: lighter;
-    color: rgba(255, 255, 255, 0.4);
-  }
-  h2 {
-    font-family: "Bellefair", sans-serif;
-    font-size: 5.5vw;
-    font-weight: lighter;
-    padding: 10px 0;
   }
 
   &__crewmember {
@@ -60,17 +51,17 @@
     }
   }
   &__image {
-    width: 35%;
+    width: 43%;
   }
 
   &__bio {
-    width: 80%;
+    width: 95%;
     line-height: 25px;
     margin: 0 auto;
     color: $lavanderBlue;
-    @include md-text;
-    font-weight: lighter;
     letter-spacing: 1px;
+    font-weight: 300;
+    text-align: center;
   }
   .glide__bullets {
     padding: 30px;

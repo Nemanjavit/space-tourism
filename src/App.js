@@ -8,12 +8,10 @@ import Crew from "./pages/Crew";
 import Technology from "./pages/Technology";
 // components
 import Nav from "./components/Nav";
-// basename="/space-tourism"
 
 function App() {
   const location = useLocation();
   let page = location.pathname.split("/")[1];
-  console.log(page);
 
   return (
     <div className={`page ${page}`}>

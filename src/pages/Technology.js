@@ -47,47 +47,45 @@ function Technology() {
   };
 
   return (
-    <div className="techPage">
-      <div className="wrapper">
-        <h3>
-          <span>03</span>
-          SPACE LAUNCH 101
-        </h3>
-        <div className="glide">
-          <div className="glide__track" data-glide-el="track">
-            <ul className="glide__slides">
-              {technologies.map((technology, i) => {
-                return (
-                  <li className="glide__slide" key={i}>
-                    <div className="techPage__imgWrapper">
-                      <img className="techPage__img" src={getImage(i)} alt="" />
+    <div className="wrapper">
+      <h3>
+        <span>03</span>
+        SPACE LAUNCH 101
+      </h3>
+      <div className="glide">
+        <div className="glide__track" data-glide-el="track">
+          <ul className="glide__slides">
+            {technologies.map((technology, i) => {
+              return (
+                <li className="glide__slide" key={i}>
+                  <div className="technology__imgWrapper">
+                    <img className="technology__img" src={getImage(i)} alt="" />
+                  </div>
+                  <div className="technology__body">
+                    <div
+                      className="glide__bullets"
+                      data-glide-el="controls[nav]"
+                    >
+                      <button className="glide__bullet" data-glide-dir="=0">
+                        1
+                      </button>
+                      <button className="glide__bullet" data-glide-dir="=1">
+                        2
+                      </button>
+                      <button className="glide__bullet" data-glide-dir="=2">
+                        3
+                      </button>
                     </div>
-                    <div className="techPage__body">
-                      <div
-                        className="glide__bullets"
-                        data-glide-el="controls[nav]"
-                      >
-                        <button className="glide__bullet" data-glide-dir="=0">
-                          1
-                        </button>
-                        <button className="glide__bullet" data-glide-dir="=1">
-                          2
-                        </button>
-                        <button className="glide__bullet" data-glide-dir="=2">
-                          3
-                        </button>
-                      </div>
-                      <div className="techPage__textContent">
-                        <h4>THE TERMINOLOGY ...</h4>
-                        <h2>{technology.name.toUpperCase()}</h2>
-                        <p>{technology.description}</p>
-                      </div>
+                    <div className="technology__textContent">
+                      <h6>THE TERMINOLOGY ...</h6>
+                      <h5>{technology.name.toUpperCase()}</h5>
+                      <p>{technology.description}</p>
                     </div>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </div>

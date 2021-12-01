@@ -46,7 +46,8 @@
   }
 
   .sliderButton {
-    @include md-text;
+    font-size: 4vw;
+    font-family: "Barlow Condensed", sans-serif;
     background: transparent;
     color: $lavanderBlue;
     border: none;
@@ -70,7 +71,6 @@
   }
 
   &__destDescription {
-    @include md-text;
     font-weight: lighter;
     margin-bottom: 20px;
     line-height: 25px;
@@ -79,16 +79,13 @@
   &__hr {
     border: 1px solid rgba(208, 214, 249, 0.1);
   }
-  h4 {
-    @include md-text;
+  h6 {
     color: $lavanderBlue;
-    font-weight: lighter;
+
     margin: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 2.5px;
   }
-  h3 {
-    font-size: 7vw;
-    font-family: "Bellefair", sans-serif;
+  h5 {
     font-weight: lighter;
     margin-bottom: 30px;
   }

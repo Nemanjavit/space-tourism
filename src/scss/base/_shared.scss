@@ -38,11 +38,20 @@ h3 {
   font-size: 4.5vw;
   font-family: "Barlow Condensed", sans-serif;
 }
-// home main heading 80px Bellefair
-// home smaller heading 16px regular barlow condensed
-// home paraghraph 15px regular barlow
 
-// slide heading 16px barlow condensed
+h4 {
+  font-family: "Bellefair", sans-serif;
+  font-size: 4.5vw;
+}
+h5 {
+  font-size: 7.3vw;
+  font-family: "Bellefair", sans-serif;
+}
+h6 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 3.7vw;
+  font-weight: lighter;
+}
 
 @keyframes slideTop {
   from {

@@ -6,18 +6,3 @@
   -o-transition: $args;
   transition: $args;
 }
-
-@mixin xl-text {
-  font-family: "Barlow Condensed", open sans;
-  font-size: 80px;
-}
-
-@mixin lg-text {
-  font-family: "Barlow Condensed", open sans;
-  font-size: 56px;
-}
-
-@mixin md-text {
-  font-family: "Barlow Condensed", open sans;
-  font-size: 2.5vw;
-}
