@@ -11,7 +11,8 @@ import Nav from "./components/Nav";
 
 function App() {
   const location = useLocation();
-  let page = location.pathname.split("/")[1];
+
+  let page = location.pathname.split("/")[2];
 
   return (
     <div className={`page ${page}`}>
