@@ -63,6 +63,11 @@
     font-weight: 300;
     text-align: center;
   }
+
+  &__info {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .glide__bullets {
     padding: 30px;
   }
@@ -105,6 +110,9 @@
       flex-direction: column;
       justify-content: start;
     }
+    &__info {
+      flex-direction: column;
+    }
 
     &__image {
       width: 54%;
@@ -113,6 +121,76 @@
       &::after {
         display: none;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .crew {
+    background-image: url("/src/assets/crew/background-crew-desktop.jpg");
+    background-size: cover;
+
+    .wrapper {
+      padding: 5% 0 0 0;
+      height: 100%;
+      position: relative;
+      overflow: visible;
+    }
+    h5 {
+      font-size: 4vw;
+    }
+    &__image {
+      width: 100%;
+    }
+    &__imageWrapper {
+      width: 35%;
+      justify-content: end;
+    }
+
+    &__crewmember {
+      flex-direction: row;
+      overflow: visible;
+      height: 100%;
+    }
+    .glide,
+    .glide__track,
+    .glide__slides,
+    .glide__slide,
+    .glide__slide--active {
+      height: 100%;
+      overflow: visible;
+    }
+
+    &__info {
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      width: 40%;
+      margin: 0 10vw 0 5vw;
+    }
+
+    p {
+      width: 100%;
+      margin-bottom: 8%;
+      text-align: left;
+      font-weight: lighter;
+    }
+    h4 {
+      text-align: left;
+    }
+
+    .glide__bullet:first-child {
+      margin-left: 0px;
+    }
+
+    .glide__bullet {
+      height: 1.1vw;
+      width: 1.1vw;
+    }
+
+    .glide__bullets {
+      padding: 30px 0;
+      display: flex;
     }
   }
 }

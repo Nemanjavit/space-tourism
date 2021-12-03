@@ -46,51 +46,53 @@ function Destionations() {
                   <div className="destination__imageWrapper">
                     <img className="destination__image" src={getImage(i)} />
                   </div>
-                  <div
-                    className="glide__bullets sliderButtons__wrapper"
-                    data-glide-el="controls[nav]"
-                  >
-                    <button
-                      className="glide__bullet sliderButton "
-                      data-glide-dir="=0"
+                  <div className="slide__body">
+                    <div
+                      className="glide__bullets sliderButtons__wrapper"
+                      data-glide-el="controls[nav]"
                     >
-                      MOON
-                    </button>
-                    <button
-                      className="glide__bullet sliderButton"
-                      data-glide-dir="=1"
-                    >
-                      MARS
-                    </button>
-                    <button
-                      className="glide__bullet sliderButton"
-                      data-glide-dir="=2"
-                    >
-                      EUROPA
-                    </button>
-                    <button
-                      className="glide__bullet sliderButton"
-                      data-glide-dir="=3"
-                    >
-                      TITAN
-                    </button>
-                  </div>
-                  <div className="destination__destInfo">
-                    <h1 className="destination__destName">
-                      {destination.name.toUpperCase()}
-                    </h1>
-                    <p className="destination__destDescription">
-                      {destination.description}
-                    </p>
-                    <hr className="destination__hr" />
-                    <div className="destination__traveldata">
-                      <div className="destination__traveldata__distance">
-                        <h6>AVG. DISTANCE</h6>
-                        <h5>{destination.distance.toUpperCase()}</h5>
-                      </div>
-                      <div className="destination__traveldata__time">
-                        <h6>EST. TRAVEL TIME</h6>
-                        <h5>{destination.travel.toUpperCase()}</h5>
+                      <button
+                        className="glide__bullet sliderButton "
+                        data-glide-dir="=0"
+                      >
+                        MOON
+                      </button>
+                      <button
+                        className="glide__bullet sliderButton"
+                        data-glide-dir="=1"
+                      >
+                        MARS
+                      </button>
+                      <button
+                        className="glide__bullet sliderButton"
+                        data-glide-dir="=2"
+                      >
+                        EUROPA
+                      </button>
+                      <button
+                        className="glide__bullet sliderButton"
+                        data-glide-dir="=3"
+                      >
+                        TITAN
+                      </button>
+                    </div>
+                    <div className="destination__destInfo">
+                      <h1 className="destination__destName">
+                        {destination.name.toUpperCase()}
+                      </h1>
+                      <p className="destination__destDescription">
+                        {destination.description}
+                      </p>
+                      <hr className="destination__hr" />
+                      <div className="destination__traveldata">
+                        <div className="destination__traveldata__distance">
+                          <h6>AVG. DISTANCE</h6>
+                          <h5>{destination.distance.toUpperCase()}</h5>
+                        </div>
+                        <div className="destination__traveldata__time">
+                          <h6>EST. TRAVEL TIME</h6>
+                          <h5>{destination.travel.toUpperCase()}</h5>
+                        </div>
                       </div>
                     </div>
                   </div>

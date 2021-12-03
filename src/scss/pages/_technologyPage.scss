@@ -105,3 +105,50 @@
     }
   }
 }
+
+@media screen and(min-width:991px) {
+  .technology {
+    background-image: url("/src/assets/technology/background-technology-desktop.jpg");
+    background-size: cover;
+
+    h5 {
+      font-size: 3.9vw;
+    }
+
+    h2 {
+      margin-left: 22vw;
+    }
+    .glide__slide {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    &__imgWrapper {
+      width: 90%;
+    }
+    &__body {
+      display: flex;
+      align-items: center;
+      padding-left: 10vw;
+    }
+
+    &__textContent {
+      width: 60%;
+      text-align: left;
+      margin: 0 5vw;
+    }
+    p {
+      width: 100%;
+      line-height: 30px;
+    }
+    .glide__bullets {
+      flex-direction: column;
+      padding: 0px;
+      height: 55%;
+      justify-content: space-between;
+    }
+    .glide__bullet {
+      height: 5.5vw;
+      width: 5.5vw;
+    }
+  }
+}

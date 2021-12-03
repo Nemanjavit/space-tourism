@@ -134,3 +134,69 @@
     }
   }
 }
+
+@media screen and (min-width: 991px) {
+  .destination {
+    background-image: url("/src/assets/destination/background-destination-desktop.jpg");
+
+    .wrapper {
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 7vw;
+    }
+
+    h2 {
+      margin-left: 24%;
+    }
+
+    p {
+      margin: 0;
+      width: 60%;
+    }
+
+    hr {
+      width: 65%;
+      margin: 4% 0;
+    }
+    &__imageWrapper {
+      width: 30%;
+    }
+
+    .glide__slide {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+    }
+
+    .slide__body {
+      width: 50%;
+    }
+
+    &__destInfo {
+      text-align: left;
+      width: 100%;
+      padding: 0;
+    }
+    .glide__bullets {
+      justify-content: start;
+    }
+
+    .glide__bullet {
+      font-size: 1.3vw;
+    }
+
+    &__traveldata {
+      justify-content: start;
+
+      &__distance {
+        margin-right: 10%;
+      }
+    }
+
+    h6 {
+      margin: 20px 0;
+    }
+  }
+}

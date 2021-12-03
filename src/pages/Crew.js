@@ -44,30 +44,32 @@ function Crew() {
                   </h2>
                   <div className="crew__crewmember">
                     <div className="crew__info">
-                      <h4>{crewmember.role.toUpperCase()}</h4>
-                      <h5>{crewmember.name.toUpperCase()}</h5>
-                      <p className="crew__bio">{crewmember.bio}</p>
-                    </div>
-                    <div
-                      className="glide__bullets"
-                      data-glide-el="controls[nav]"
-                    >
-                      <button
-                        className="glide__bullet circleBullets "
-                        data-glide-dir="=0"
-                      ></button>
-                      <button
-                        className="glide__bullet circleBullets "
-                        data-glide-dir="=1"
-                      ></button>
-                      <button
-                        className="glide__bullet circleBullets"
-                        data-glide-dir="=2"
-                      ></button>
-                      <button
-                        className="glide__bullet circleBullets"
-                        data-glide-dir="=3"
-                      ></button>
+                      <div>
+                        <h4>{crewmember.role.toUpperCase()}</h4>
+                        <h5>{crewmember.name.toUpperCase()}</h5>
+                        <p className="crew__bio">{crewmember.bio}</p>
+                      </div>
+                      <div
+                        className="glide__bullets"
+                        data-glide-el="controls[nav]"
+                      >
+                        <button
+                          className="glide__bullet circleBullets "
+                          data-glide-dir="=0"
+                        ></button>
+                        <button
+                          className="glide__bullet circleBullets "
+                          data-glide-dir="=1"
+                        ></button>
+                        <button
+                          className="glide__bullet circleBullets"
+                          data-glide-dir="=2"
+                        ></button>
+                        <button
+                          className="glide__bullet circleBullets"
+                          data-glide-dir="=3"
+                        ></button>
+                      </div>
                     </div>
                     <div className="crew__imageWrapper">
                       <img className="crew__image" src={getImage(i)} alt="" />
