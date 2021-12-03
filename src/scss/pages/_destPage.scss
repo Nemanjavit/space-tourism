@@ -90,3 +90,47 @@
     margin-bottom: 30px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .destination {
+    background-image: url("/src/assets/destination/background-destination-tablet.jpg");
+
+    &__heading {
+      width: calc(100% - 7px);
+      text-align: left;
+      margin-left: 9vw;
+    }
+
+    &__imageWrapper {
+      width: 40%;
+    }
+
+    .sliderButton {
+      font-size: 2.1vw;
+      font-weight: lighter;
+      letter-spacing: 2.5px;
+      margin: 0 15px;
+    }
+
+    &__destDescription {
+      width: 80%;
+      margin: 0 auto 60px auto;
+    }
+
+    &__traveldata {
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+
+      &__time,
+      &__distance {
+        padding: 0 10px;
+      }
+    }
+
+    &__hr {
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+}

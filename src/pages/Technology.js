@@ -36,7 +36,7 @@ function Technology() {
   }, []);
 
   const setImage = (e) => {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 991) {
       setImages([img_1, img_2, img_3]);
     } else {
       setImages([img_1xl, img_2xl, img_3xl]);
@@ -48,10 +48,10 @@ function Technology() {
 
   return (
     <div className="wrapper">
-      <h3>
+      <h2>
         <span>03</span>
         SPACE LAUNCH 101
-      </h3>
+      </h2>
       <div className="glide">
         <div className="glide__track" data-glide-el="track">
           <ul className="glide__slides">

@@ -38,14 +38,14 @@
 
   h6 {
     font-weight: lighter;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: $lavanderBlue;
   }
   h5 {
     font-weight: lighter;
     margin: 10px 0 15px 0;
   }
-  h3 {
+  h2 {
     font-weight: lighter;
     letter-spacing: 1px;
     padding: 10px 0;
@@ -67,5 +67,41 @@
     display: block;
     margin: 0 auto;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .technology {
+    background-image: url("/src/assets/technology/background-technology-tablet.jpg");
+    background-size: cover;
+
+    h2 {
+      width: 100%;
+      text-align: left;
+      margin-left: 10vw;
+    }
+
+    h5 {
+      font-size: 5.2vw;
+    }
+
+    p {
+      width: 65%;
+      margin: 0 auto;
+      font-weight: lighter;
+    }
+
+    &__imgWrapper {
+      height: 50%;
+    }
+
+    .glide__bullets {
+      padding: 60px 0;
+    }
+
+    .glide__bullet {
+      height: 7vw;
+      width: 7vw;
+    }
   }
 }

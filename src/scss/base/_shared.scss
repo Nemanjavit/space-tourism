@@ -61,3 +61,37 @@ h6 {
     margin-top: 0vh;
   }
 }
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 10.5vw;
+  }
+
+  h2 {
+    font-size: 2.7vw;
+  }
+
+  h3 {
+    font-size: 2.6vw;
+  }
+
+  h4 {
+    font-size: 3.1vw;
+  }
+
+  h5 {
+    font-size: 3.7vw;
+  }
+
+  h6 {
+    font-size: 2.1vw;
+  }
+
+  p {
+    font-size: 2.1vw;
+  }
+
+  .wrapper {
+    padding: 8% 0;
+  }
+}
