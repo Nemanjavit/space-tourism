@@ -14,9 +14,10 @@ function HomePage() {
           experience!
         </p>
       </div>
-      <Link to="/destination" className="home__circleBtn">
-        <span className="home__circleBtn__text">EXPLORE</span>
-      </Link>
+      <div className="home__circleBtn">
+        <Link to="/destination">EXPLORE</Link>
+        <span></span>
+      </div>
     </div>
   );
 }

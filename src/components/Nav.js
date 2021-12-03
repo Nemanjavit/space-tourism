@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/shared/logo.svg";
 import hamburger from "../assets/shared/icon-hamburger.svg";
 import close from "../assets/shared/icon-close.svg";
@@ -20,18 +20,18 @@ function Nav() {
       </button>
       <nav className={isShown ? "nav nav--open" : "nav"}>
         <div className="nav__menu">
-          <Link className="nav__menu__item" to="/home">
-            00 HOME
-          </Link>
-          <Link className="nav__menu__item" to="/destination">
-            01 DESTIONATION
-          </Link>
-          <Link className="nav__menu__item" to="/crew">
-            02 CREW
-          </Link>
-          <Link className="nav__menu__item" to="/technology">
-            03 TECHNOLOGY
-          </Link>
+          <NavLink className="nav__menu__item" to="/home">
+            <span>00</span>HOME
+          </NavLink>
+          <NavLink className="nav__menu__item" to="/destination">
+            <span>01</span> DESTIONATION
+          </NavLink>
+          <NavLink className="nav__menu__item" to="/crew">
+            <span>02</span> CREW
+          </NavLink>
+          <NavLink className="nav__menu__item" to="/technology">
+            <span>03</span> TECHNOLOGY
+          </NavLink>
         </div>
       </nav>
     </header>

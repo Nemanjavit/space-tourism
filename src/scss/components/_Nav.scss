@@ -79,8 +79,17 @@
           font-weight: 300;
           font-family: "Barlow Condensed", sans-serif;
           letter-spacing: 2px;
+
+          span {
+            font-weight: bolder;
+            margin-right: 5px;
+          }
         }
+
         &__item:hover {
+          border-bottom: 2px solid rgba(#ffff, 0.2);
+        }
+        .active {
           border-bottom: 2px solid white;
         }
       }
@@ -110,6 +119,17 @@
 
     .nav {
       width: 58%;
+
+      &__menu__item {
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 1.2vw;
+        letter-spacing: 4px;
+        font-weight: 300;
+
+        span {
+          font-weight: 500;
+        }
+      }
     }
   }
 }
