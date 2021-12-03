@@ -128,3 +128,9 @@ h6 {
     font-size: 1.25vw;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  p {
+    line-height: 40px !important;
+  }
+}
