@@ -1,11 +1,16 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/shared/logo.svg";
 import hamburger from "../assets/shared/icon-hamburger.svg";
 import close from "../assets/shared/icon-close.svg";
 
 function Nav() {
   const [isShown, setisShown] = useState(false);
+  // if (navigator.userAgent.indexOf("Firefox") != -1) {
+  //   console.log("Firefox");
+  // } else {
+  //   console.log("not");
+  // }
 
   return (
     <header className="header">

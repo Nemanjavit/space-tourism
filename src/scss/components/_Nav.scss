@@ -18,9 +18,10 @@
     border: none;
     cursor: pointer;
   }
+
   .nav {
     z-index: 4;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.9);
     min-height: 100vh;
     padding-top: 30%;
     position: fixed;
@@ -28,7 +29,11 @@
     top: 0;
     bottom: 0;
     right: -100%;
-    backdrop-filter: blur(20px);
+    @supports (backdrop-filter: blur(20px)) {
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+    }
+
     @include transition(right 0.2s linear);
 
     &--open {
@@ -133,3 +138,11 @@
     }
   }
 }
+
+// @supports (-moz-appearance: none) {
+//   .header {
+//     .nav {
+//       background-color: rgba(0, 0, 0, 0.9);
+//     }
+//   }
+// }
